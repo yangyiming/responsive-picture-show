@@ -8,7 +8,7 @@ pictureListShow depends on jQuery. Include them both in end of your HTML code:
 
 <pre>
     <script type="text/javascript" src="../dist/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="pictureListShow.min.js"></script>
+    <script type="text/javascript" src="responsive-picture-show.min.js"></script>
 </pre>
 
 html code:
