@@ -454,6 +454,10 @@
 * html .jspCorner {
   margin: 0 -3px 0 0;
 }
+* {
+  margin: 0px;
+  padding: 0px;
+}
 .cnzz {
   position: absolute;
   right: 50%;

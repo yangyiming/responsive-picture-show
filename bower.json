@@ -5,7 +5,7 @@
     "yangyiming <529710127@qq.com>"
   ],
   "description": "you can use this plugin for image list show",
-  "main": "./src/pictureListShow.js",
+  "main": "responsive-picture-show.js",
   "license": "MIT",
   "private": true,
   "ignore": [
