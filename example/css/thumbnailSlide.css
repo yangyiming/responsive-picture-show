@@ -1,0 +1,182 @@
+/* Track */
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+.jspPane {
+  position: absolute;
+}
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+  background: red;
+}
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+}
+.jspCap {
+  display: none;
+}
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+.jspTrack {
+  background: url("../images/scrollBar.png") no-repeat center 0px;
+  position: relative;
+}
+.jspDrag {
+  background: #bbd;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  margin: 0px 0px 0px 0px;
+  background: url("../images/scrollBar.png") no-repeat center -14px;
+}
+.jspDrag .jspDragLeft,
+.jspDrag .jspDragRight {
+  background: url("../images/scrollBar.png") no-repeat left -14px;
+  width: 4px;
+  height: 9px;
+  position: absolute;
+  top: 0px;
+}
+.jspDrag .jspDragLeft {
+  left: -4px;
+}
+.jspDrag .jspDragRight {
+  background-position: right -14px;
+  right: -4px;
+}
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+.jspVerticalBar .jspArrow {
+  height: 16px;
+}
+.jspHorizontalBar .jspArrow {
+  width: 4px;
+  float: left;
+  height: 100%;
+  background: url("../images/scrollBar.png") no-repeat;
+}
+.jspHorizontalBar .jspArrow.jspArrowLeft {
+  background-position: left 0px;
+}
+.jspHorizontalBar .jspArrow.jspArrowRight {
+  background-position: right 0px;
+}
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+.thumbSlide {
+  position: relative;
+}
+.thumbSlide .thumbSlideBox {
+  height: 400px;
+}
+.thumbSlide .thumbSlideBox .banner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.thumbSlide .thumbSlideBox .box {
+  text-align: center;
+}
+.thumbSlide .slidesjs-navigation {
+  font-size: 0px;
+}
+.thumbSlide .slidesjs-thumbnail {
+  outline: 0;
+  width: 539px;
+  height: 110px;
+  margin-top: 5px;
+  position: relative;
+}
+.thumbSlide .slidesjs-thumbnail ul {
+  overflow: hidden;
+  position: relative;
+  left: -4px;
+}
+.thumbSlide .slidesjs-thumbnail .slidesjs-thumbnail-item {
+  float: left;
+  margin-left: 4px;
+  width: 135px;
+  height: 87px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.thumbSlide .slidesjs-thumbnail .slidesjs-thumbnail-item:hover img {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.thumbSlide .slidesjs-navigation {
+  background: url("../images/page-arrow-btn-bg.png") 0px -340px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -32px;
+  width: 32px;
+  height: 64px;
+  z-index: 12;
+  cursor: pointer;
+}
+.thumbSlide .slidesjs-next {
+  right: -25px;
+}
+.thumbSlide .slidesjs-previous {
+  left: -25px;
+  background-position: 0px -260px;
+}
+.thumbSlide .thumbnail-image-mask {
+  position: absolute;
+  z-index: 1;
+  width: 127px;
+  height: 79px;
+  border: 4px solid #2492df;
+  bottom: 0px;
+  left: 0px;
+}
+.thumbSlide .thumbnail-image-mask .top-arrow-ico {
+  top: -8px;
+  left: 50%;
+  margin-left: -3px;
+  position: absolute;
+  background-position: 0px -172px;
+}

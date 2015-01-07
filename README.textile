@@ -1,0 +1,90 @@
+h1. Responsive picture Show
+
+you can use this plugin for show picture list in page,and can  Responsive any screen
+
+h2. how to use?
+
+pictureListShow depends on jQuery. Include them both in end of your HTML code:
+
+<pre>
+    <script type="text/javascript" src="../dist/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="pictureListShow.min.js"></script>
+</pre>
+
+html code:
+
+<pre>
+	<div class="image-show-module">
+            <div class="title" id="slideModuleTile">
+                <h1>how to use this plugin</h1>
+                <span class="number">
+                    (<strong class="current"></strong><span class="slash"></span><span class="all"></span>)
+                </span>
+            </div>
+            <div class="thumbSlide">
+                <div id="thumbSlide" class="thumbSlideBox">
+
+                </div>
+                <a id="slidesjs-previous" href="javascript:void(0)"   class="slide-arrow prev"  title="上一张">
+                    <span class="slidesjs-previous slidesjs-navigation"></span>
+                </a>
+                <a id="slidesjs-next" href="javascript:void(0)" class="slide-arrow next" title="下一张">
+                    <span class="slidesjs-next slidesjs-navigation"></span>
+                </a>
+                <a class="image-zoom-ico" href=""></a>
+                <div class="tip-box empty fixed" id="thumbSlideText">
+                    <p class="text">
+                        <span class="number">
+                            <strong class="current"></strong><span class="slash"></span><span class="all"></span>
+                        </span>
+                        <span class="image-title"></span>
+                    </p>
+                </div>
+                <div class="slidesjs-thumbnail-box-empty">
+
+                </div>
+                <div class="slidesjs-thumbnail-box fixed">
+                    <div class="item-image-list pre">
+                        <div class="image-item">
+                            <a href="">
+                            <img src="http://static.cga.cn/res/cga/public/images/banner/135x87.jpg">
+                            </a>
+                        </div>
+                        <p class="text">上一图集</p>
+                    </div>
+                    <div class="thumbSlide-tab-box">
+                        <div class="prev arrow"></div>
+                        <div class="slidesjs-thumbnail" id="thumbSlideTab">
+                            <div class="thumbnail-image-mask">
+                                <span class="top-arrow-ico"></span>
+                            </div>
+                        </div>
+                        <div class="next arrow"></div>
+                    </div>
+                    <div class="item-image-list next">
+                        <div class="image-item">
+                            <a href="">
+                            <img src="http://static.cga.cn/res/cga/public/images/banner/135x87.jpg">
+                            </a>
+                        </div>
+                        <p class="text">下一图集</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</pre>
+
+you need offer dataSource for JS init
+
+image:big image url
+thumbnail:thumbnail url
+url: hyperlink
+text: image title
+
+<pre>
+var dataSource = [
+        {image:"images/banner/690x360.jpg",thumbnail:"/images/banner/135x87.jpg",url:"/images/banner/690x360.jpg",text:"232323"},
+        {image:"images/banner/690x360.jpg",thumbnail:"/images/banner/135x87.jpg",url:"/images/banner/690x360.jpg",text:"232323"}
+    ];
+gallery(dataSource);
+</pre>

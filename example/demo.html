@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图片展示列表</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="http://static.cga.cn/res/cga/public/css/public.css"/>
+
+    <link rel="stylesheet" href="css/imageSite.css"/>
+
+</head>
+<body class="image-site image-list-detail">
+    <div class="image-site-item-box">
+    <div class="image-show-module">
+        <div class="title" id="slideModuleTile">
+            <h1>如何拿到s4的入场卷：赛制对职业战队影响解读</h1>
+            <span class="number">
+                (<strong class="current"></strong><span class="slash"></span><span class="all"></span>)
+            </span>
+        </div>
+        <div class="thumbSlide">
+            <div id="thumbSlide" class="thumbSlideBox">
+
+            </div>
+            <a id="slidesjs-previous" href="javascript:void(0)"   class="slide-arrow prev"  title="上一张">
+                <span class="slidesjs-previous slidesjs-navigation"></span>
+            </a>
+            <a id="slidesjs-next" href="javascript:void(0)" class="slide-arrow next" title="下一张">
+                <span class="slidesjs-next slidesjs-navigation"></span>
+            </a>
+            <a class="image-zoom-ico" href=""></a>
+            <div class="tip-box empty fixed" id="thumbSlideText">
+                <p class="text">
+                    <span class="number">
+                        <strong class="current"></strong><span class="slash"></span><span class="all"></span>
+                    </span>
+                    <span class="image-title"></span>
+                </p>
+            </div>
+            <div class="slidesjs-thumbnail-box-empty">
+
+            </div>
+            <div class="slidesjs-thumbnail-box fixed">
+                <div class="item-image-list pre">
+                    <div class="image-item">
+                        <a href="">
+                        <img src="http://static.cga.cn/res/cga/public/images/banner/135x87.jpg">
+                        </a>
+                    </div>
+                    <p class="text">上一图集</p>
+                </div>
+                <div class="thumbSlide-tab-box">
+                    <div class="prev arrow"></div>
+                    <div class="slidesjs-thumbnail" id="thumbSlideTab">
+                        <div class="thumbnail-image-mask">
+                            <span class="top-arrow-ico"></span>
+                        </div>
+                    </div>
+                    <div class="next arrow"></div>
+                </div>
+                <div class="item-image-list next">
+                    <div class="image-item">
+                        <a href="">
+                        <img src="http://static.cga.cn/res/cga/public/images/banner/135x87.jpg">
+                        </a>
+                    </div>
+                    <p class="text">下一图集</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p class="copyright">上海华奥电竞信息科技有限公司   沪ICP备14024458号-1</p>
+    </div>
+<script type="text/javascript" src="../src/jquery.js"></script>
+<script type="text/javascript" src="../responsive-picture-show.min.js"></script>
+    <!--<script type="text/javascript" src="../dist/jquery.min.js"></script>-->
+    <!--<script type="text/javascript" src="../src/jquery.slides.js"></script>-->
+    <!--<script type="text/javascript" src="../src/jquery.jscrollpane.js"></script>-->
+    <!--<script type="text/javascript" src="../src/pictureListShow.js"></script>-->
+
+    <script type="text/javascript">
+    //幻灯片
+    var dataSource = [
+        {image:"http://static.cga.cn/res/cga/public/images/banner/690x360.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/690x360.jpg",text:"232323"},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",text:""},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",text:""},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",text:""},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/690x360.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/690x360.jpg",text:"232323"},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",text:""},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",text:""},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",text:""},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/690x360.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/690x360.jpg",text:"232323"},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",text:""},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",text:""},
+        {image:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",thumbnail:"http://static.cga.cn/res/cga/public/images/banner/135x87.jpg",url:"http://static.cga.cn/res/cga/public/images/banner/919x520-1.jpg",text:""}
+    ];
+    gallery(dataSource);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "pictureListShow",
+  "version": "0.0.1",
+  "authors": [
+    "yangyiming <529710127@qq.com>"
+  ],
+  "description": "you can use this plugin for image list show",
+  "main": "./src/pictureListShow.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "test",
+      "tests",
+      "src",
+      "example",
+      "Gruntfile.js",
+      "README.textile",
+      "package.json",
+      ".bowerrc"
+  ],
+  "dependencies": {
+    "jquery": "1.9.x",
+    "jScrollPane": "2.0.x"
+  }
+}
