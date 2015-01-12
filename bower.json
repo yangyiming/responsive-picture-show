@@ -7,7 +7,6 @@
   "description": "you can use this plugin for image list show",
   "main": "responsive-picture-show.js",
   "license": "MIT",
-  "private": true,
   "ignore": [
       "**/.*",
       "node_modules",
