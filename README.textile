@@ -88,4 +88,10 @@ var dataSource = [
         {image:"images/banner/690x360.jpg",thumbnail:"/images/banner/135x87.jpg",url:"/images/banner/690x360.jpg",text:"232323"}
     ];
 gallery(dataSource);
+
+h2. bower install
+
+<pre>
+    bower install toolbar-fix
+</pre>
 </pre>
