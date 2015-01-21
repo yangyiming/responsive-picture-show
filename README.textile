@@ -92,6 +92,6 @@ gallery(dataSource);
 h2. bower install
 
 <pre>
-    bower install toolbar-fix
+    bower install responsive-picture-show
 </pre>
 </pre>
